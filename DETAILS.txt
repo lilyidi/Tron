@@ -1,0 +1,29 @@
+This is a working two-player game of Tron!
+
+Player:
+Keeps track of the player's information: position, trail thus far, number of 
+boosts left, and colour
+
+StartMenu:
+Starts with starting image and leads to ColourMenu where the two players may 
+choose their colours.
+
+ColourMenu:
+Takes in a Tron object and sets the colours of the players involved in the game
+to be whatever colours the users choose. 
+The choices are arranged as a grid of radio buttons. The two players cannot be
+the same colours. (The game cannot proceed unless the two colours chosen are 
+different.)
+
+GamePanel:
+Keeps track of and shows what is happening in the game.
+Corresponds keys with directions that the players are moving in and repaints
+
+Tron:
+Starts with StartMenu
+Keeps game running with a Timer and repaints updated scenarios of the game
+Checks who wins
+
+EndPanel:
+Displays an image showing which player wins and offers the option of playing 
+again, starting with the StartMenu
